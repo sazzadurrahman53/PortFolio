@@ -14,28 +14,32 @@
 <body>
   <!-- navbar -->
   <nav class="navbar">
-    <div class="max-width">
-      <div class="logo" id="logo">
-        <a href="#"> Portfo<span>lio.</span></a>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <a href="#"> Home </a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">skills</a>
-        </li>
-      </ul>
+
+    <div class="logo" id="logo">
+      <a href="#"> Portfo<span>lio.</span></a>
+
     </div>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-list">
+      <li>
+        <a href="#"> Home </a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">skills</a>
+      </li>
+    </ul>
+
   </nav>
   <!-- home content -->
   <section class="home" id="home">
@@ -64,18 +68,18 @@
           <div class="text">
             <div class="box-container">
               <div class="box">
-                <h3> <span>Name</span> : Sazzdur Rahman</h3>
-                <h3><span>Age</span> : 22 Years</h3>
-                <h3><span>Email</span> :
+                <h3 id="heading-skill"> <span>Name</span> : Sazzdur Rahman</h3>
+                <h3 id="heading-skill"><span>Age</span> : 22 Years</h3>
+                <h3 id="heading-skill"><span>Email</span> :
                   <a style="text-transform: lowercase;" href="sazzadrn17@gmail.com">sazzad17@gmail.com</a></h3>
-                <h3><span>Address</span> : Noakhali, Chattagram, Bangladesh</h3>
+                <h3 id="heading-skill"><span>Address</span> : Noakhali, Chattagram, Bangladesh</h3>
               </div>
               <div class="box">
-                <h3><span>Freelance</span> : Available</h3>
-                <h3><span>Skill</span> : Front End Web Development</h3>
-                <h3><span>Experience</span> : 1 Years</h3>
-                <h3><span>Language</span> : Bangla, English</h3>
-                <h3><span>Phone</span> : 01732791906</h3>
+                <h3 id="heading-skill"><span>Freelance</span> : Available</h3>
+                <h3 id="heading-skill"><span>Skill</span> : Front End Web Development</h3>
+                <h3 id="heading-skill"><span>Experience</span> : 1 Year</h3>
+                <h3 id="heading-skill"><span>Language</span> : Bangla, English</h3>
+                <h3 id="heading-skill"><span>Phone</span> : 01732791906</h3>
               </div>
             </div>
             <button class="cv-btn">Download CV</button>
@@ -91,36 +95,36 @@
     <div class="box-container">
       <div class="box">
         <img src="assets/images/html.png" alt="#">
-        <h3>HTML</h3>
+        <h3 id="heading-skill">HTML</h3>
       </div>
       <div class="box">
         <img src="assets/images/css.png" alt="#">
-        <h3>CSS</h3>
+        <h3 id="heading-skill">CSS</h3>
       </div>
       <div class="box">
         <img src="assets/images/bootstrap.png" alt="#">
-        <h3>BootStrap</h3>
+        <h3 id="heading-skill">BootStrap</h3>
       </div>
 
       <div class="box">
         <img src="assets/images/js.png" alt="#">
-        <h3>JavaScript</h3>
+        <h3 id="heading-skill">JavaScript</h3>
       </div>
       <div class="box">
         <img src="assets/images/es6.png" alt="#">
-        <h3>ES6</h3>
+        <h3 id="heading-skill">ES6</h3>
       </div>
       <div class="box">
         <img src="assets/images/react.png" alt="#">
-        <h3>React JS</h3>
+        <h3 id="heading-skill">React JS</h3>
       </div>
       <div class="box">
         <img src="assets/images/github.png" alt="#">
-        <h3>GitHub</h3>
+        <h3 id="heading-skill">GitHub</h3>
       </div>
       <div class="box">
         <img src="assets/images/java.png" alt="#s">
-        <h3>Java</h3>
+        <h3 id="heading-skill">Java</h3>
       </div>
     </div>
   </section>
@@ -130,18 +134,21 @@
     <div class="box-container">
       <div class="box">
         <i class="fas fa-graduation-cap"></i>
-        <span>Jan, 2012 - June, 2017 </span>
-        <h3>Secondary School Certificate</h3>
-        <h2>Ahmodia Model High School, Noakhali</h2>
-        <p>I have completed my Seconday School Certificate (SSC) from this school. Here my basic foundation of education
+        <span id="date">Jan, 2012 - June, 2017 </span>
+        <h3 id="heading-skill">Secondary School Certificate</h3>
+        <h2 id="institute">Ahmodia Model High School, Noakhali</h2>
+        <p id="discription">I have completed my Seconday School Certificate (SSC) from this school. Here my basic
+          foundation of
+          education
           is built.</p>
       </div>
       <div class="box">
         <i class="fas fa-graduation-cap"></i>
-        <span> July, 2017 - December, 2021 </span>
-        <h3>Diploma in Computer Engineering</h3>
-        <h2>Lakshmipur Polytechnic Institute, Lakshmipur</h2>
-        <p>As a student of Computer Engineering at this institute, I have learned the basic fundamentals of Computer
+        <span id="date"> July, 2017 - December, 2021 </span>
+        <h3 id="heading-skill">Diploma in Computer Engineering</h3>
+        <h2 id="institute">Lakshmipur Polytechnic Institute, Lakshmipur</h2>
+        <p id="discription">As a student of Computer Engineering at this institute, I have learned the basic
+          fundamentals of Computer
           Science and Technologies. </p>
       </div>
     </div>

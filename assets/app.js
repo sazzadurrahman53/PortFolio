@@ -1,24 +1,22 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
-let navbar = document.querySelector('.navbar');
+const navbar = document.querySelector(".navbar");
 
 let sticky = navbar.offsetTop;
 
-
-
 function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
   }
-  
-  // function myFunction() {
-  //   let x = document.getElementById("logo");
-  //   if (x.style.display === "block") {
-  //     x.style.display = "none";
-  //   } else {
-  //     x.style.display = "block";
-  //   }
-  // }
+}
+
+const hambergur = document.getElementById("hamburger");
+const navUl = document.querySelector(".nav-list");
+
+hambergur.addEventListener("click", () => {
+  navUl.classList.toggle("show");
+});
