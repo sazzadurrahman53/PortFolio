@@ -337,9 +337,8 @@ section {
     font-size: 20px;
   }
   .home-content {
-    margin-top: -20rem;
-    width: 50%;
-    height: 100vh;
+    position: relative;
+    top: -10rem;
   }
 }
 .education .box-container {
