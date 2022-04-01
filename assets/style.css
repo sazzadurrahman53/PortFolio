@@ -448,6 +448,7 @@ section {
   }
   .logo a {
     font-size: 25px;
+    margin-left: -2px;
   }
   .nav-list {
     display: none;
