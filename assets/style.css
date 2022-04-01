@@ -419,7 +419,7 @@ section {
   font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .about {
     margin-top: -350px;
   }
@@ -446,7 +446,7 @@ section {
     font-size: 22px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .skills .heading {
     font-size: 25px;
   }
@@ -454,7 +454,7 @@ section {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .education .heading {
     font-size: 25px;
   }
