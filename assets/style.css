@@ -84,48 +84,6 @@ body {
 .hamburger:focus {
   outline: none;
 }
-/* home style */
-#home {
-  /* background-image: url("../assets/images/my-img.jpg") !important;
-  background-size: cover;
-  height: 100vh;
-  color: #fff;
-  max-width: 100%;
-  width: 100%;
-}
-
-.home-content {
-  display: grid;
-  place-items: left;
-  color: rgb(221, 200, 200);
-
-  margin-top: -150px;
-}
-
-.home-content article {
-  margin-top: 40vh;
-  width: 50%;
-}
-
-.home-content .text-1 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.home-content .text-2 {
-  font-size: 70px;
-  font-weight: 550;
-}
-
-.home-content .text-3 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.home-content .text-3 span {
-  color: rgb(190, 6, 6);
-  font-weight: 550; */
-}
 .detail {
   margin-left: 8%;
   margin-top: 15%;
