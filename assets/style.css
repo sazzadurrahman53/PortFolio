@@ -7,13 +7,13 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
   color: #fff;
 }
 
 /* navbar style */
 .navbar {
-  background: linear-gradient(0.25turn, #5a6e77, #c31f50, #3c4ff6);
+  background: linear-gradient(0.25turn, #4b8ba9, #e3517d, #3c4ff6db);
   padding: 20px;
   overflow: hidden;
   z-index: 999;
@@ -49,7 +49,7 @@ body {
 }
 
 .logo span {
-  color: #f4b4d6;
+  color: #ff3700;
 }
 .nav-list {
   margin-right: 3rem;
@@ -140,6 +140,7 @@ body {
 }
 .detail p {
   font-size: 25px;
+  color: whitesmoke;
 }
 .detail p span {
   color: aqua;
@@ -158,7 +159,9 @@ body {
   cursor: pointer;
 }
 .detail a:hover {
-  background-color: bisque;
+  width: 130px;
+  filter: drop-shadow(0 0 0 rgb(255, 0, 0)) invert(90%);
+  color: black;
 }
 .hero-images {
   width: 45%;
@@ -189,7 +192,7 @@ body {
   border-radius: 50%;
 }
 /* button style */
-.HireMe {
+/* .HireMe {
   text-decoration: none;
   border: 1px solid red;
   background: #770c30;
@@ -201,7 +204,6 @@ body {
   font-weight: 500;
   border-radius: 10px;
   border: 0.5 solid rgb(255, 255, 255);
-  color: rgb(221, 200, 200);
 }
 
 .HireMe:hover {
@@ -213,7 +215,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-family: "Times New Roman", Times, serif;
-}
+} */
 
 /* about section style */
 section {
@@ -262,7 +264,7 @@ section {
 }
 
 .about .title span {
-  color: rgb(123, 59, 175);
+  color: rgb(228, 58, 19);
 }
 
 .about-content .right {
@@ -286,29 +288,41 @@ section {
 .about-content .right .cv-btn {
   text-align: justify;
   display: block;
-  text-decoration: none;
   border: 1px solid red;
-  background: #a23cf6;
-  color: rgb(231, 203, 203);
-  margin-top: 20px;
-  width: 140px;
-
+  margin-top: 30px;
+  width: 13em;
   padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
   border-radius: 10px;
   border: none;
-  color: rgb(255, 214, 214);
+  filter: drop-shadow(0 0 0 rgb(237, 234, 234)) invert(90%);
   padding: 15px;
 }
 
+.about-content .right .cv-btn a #resume-text {
+  color: rgb(255, 72, 0) !important;
+}
+.about-content .right .cv-btn a {
+  text-decoration: none;
+}
+.about-content .right .cv-btn img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  box-shadow: none;
+}
+
 .about-content .right .cv-btn:hover {
-  background-color: rgb(226, 42, 51);
-  color: #34f5ff;
+  background: none;
+  filter: drop-shadow(4px 4px 6px red) invert(90%);
   font-size: 15px;
   font-weight: 400px;
-  box-shadow: 2px 2px #888888;
+
   cursor: pointer;
+  width: 200px;
+  border: 1px solid red;
 }
 
 .services {
@@ -427,10 +441,11 @@ section {
 
 .heading {
   margin-bottom: 100px;
+  color: whitesmoke;
 }
 
 .heading span {
-  color: rgb(190, 6, 6);
+  color: rgb(228, 58, 19);
   font-weight: 30px;
   margin-top: -200px;
 }
@@ -440,15 +455,33 @@ section {
   font-size: 40px;
   font-weight: bold;
 }
-
+#contact .heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.info-container {
+  display: flex;
+  justify-content: space-around;
+}
+.inputBox #subject {
+  width: 200px;
+}
+.box-container {
+  color: whitesmoke;
+}
+.box-container span {
+  color: #ff3700;
+}
 /* responsive */
 @media screen and (max-width: 800px) {
   .navbar {
     padding: 7px;
+    display: flex;
+    flex-direction: row;
   }
   .logo a {
     font-size: 25px;
-    margin-left: -2px;
   }
   .nav-list {
     display: none;
@@ -459,12 +492,10 @@ section {
     display: flex;
   }
   .hamburger {
-    display: block;
-    width: 100%;
+    display: inline-block;
   }
   .hero-content {
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -482,7 +513,7 @@ section {
   .hero-content .hero-images {
     width: 100%;
     position: absolute;
-    top: 18em;
+    top: 21em;
     left: 30px;
   }
   .shape-clip {
@@ -540,5 +571,11 @@ section {
   }
   #discription {
     font-size: 17px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .info-container {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
