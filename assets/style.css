@@ -13,7 +13,7 @@ body {
 
 /* navbar style */
 .navbar {
-  background: linear-gradient(0.25turn, #4b8ba9, #e3517d, #3c4ff6db);
+  background: linear-gradient(0.2turn, #4b8ba9, #471c1c, #3c4ff6a3);
   padding: 20px;
   overflow: hidden;
   z-index: 999;
