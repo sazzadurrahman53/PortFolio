@@ -191,15 +191,14 @@ section {
 }
 
 .about-content .left {
-  width: 45%;
+  width: 50%;
 }
 
 .about-content .left img {
-  height: 400px;
+  height: 450px;
   width: 400px;
 
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
 }
 
 .about .title {
