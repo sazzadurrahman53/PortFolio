@@ -13,18 +13,50 @@ body {
 
 /* navbar style */
 .navbar {
-  background: linear-gradient(0.2turn, #4b8ba9, #471c1c, #3c4ff6a3);
-  padding: 20px;
-  overflow: hidden;
-  z-index: 999;
   display: flex;
   justify-content: space-between;
 }
+nav {
+  width: 100%;
+  background: linear-gradient(0.2turn, #4b8ba9, #471c1c, #3c4ff6c0);
+  overflow: hidden;
+  height: 12vh;
+  z-index: 9999;
+}
+.navlist {
+  margin-right: 40px;
+}
 
-.sticky {
+.links {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  color: rgb(183, 239, 0);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.links:hover {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+
+.fixed {
   position: fixed;
   top: 0;
-  width: 100%;
+}
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:focus {
+  outline: none;
 }
 
 .max-width {
@@ -32,12 +64,6 @@ body {
   padding: 0 80px;
   margin: auto;
   font-family: "Fira Sans", sans-serif;
-}
-
-.navbar .max-width {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo a {
@@ -51,14 +77,14 @@ body {
 .logo span {
   color: #ff3700;
 }
-.nav-list {
+.navlist {
   margin-right: 3rem;
 }
-.nav-list li {
+.navlist li {
   display: inline-block;
 }
 
-.nav-list li a {
+.navlist li a {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
@@ -66,24 +92,14 @@ body {
   margin-left: 25px;
 }
 
-.nav-list li a:hover {
+.navlist li a:hover {
   color: rgb(231, 22, 22);
 }
 
 #logo {
   font-family: "DM Sans", sans-serif;
 }
-.hamburger {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-}
-.hamburger:focus {
-  outline: none;
-}
+
 .detail {
   margin-left: 8%;
   margin-top: 15%;
@@ -149,33 +165,7 @@ body {
   width: 100%;
   border-radius: 50%;
 }
-/* button style */
-/* .HireMe {
-  text-decoration: none;
-  border: 1px solid red;
-  background: #770c30;
-  color: rgb(231, 203, 203);
-  margin-top: 25px;
-  width: 100px;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  border: 0.5 solid rgb(255, 255, 255);
-}
 
-.HireMe:hover {
-  color: #fff;
-  background: none;
-}
-
-.home-content article .HireMe a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-} */
-
-/* about section style */
 section {
   padding: 100px 0;
 }
@@ -433,23 +423,23 @@ section {
 /* responsive */
 @media screen and (max-width: 800px) {
   .navbar {
-    padding: 7px;
     display: flex;
     flex-direction: row;
   }
   .logo a {
     font-size: 25px;
   }
-  .nav-list {
+  .navlist {
     display: none;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .nav-list.show {
+  .navlist.show {
     display: flex;
   }
   .hamburger {
     display: inline-block;
+    margin-right: 40px;
   }
   .hero-content {
     width: 100%;
@@ -463,10 +453,7 @@ section {
   .detail p {
     font-size: 15px;
   }
-  /* .home-content {
-    position: relative;
-    top: -10rem;
-  } */
+
   .hero-content .hero-images {
     width: 100%;
     position: absolute;
@@ -484,6 +471,7 @@ section {
 @media screen and (max-width: 800px) {
   .about {
     margin-top: 20em;
+    margin-left: 3em;
   }
   .about-content .left img {
     height: 350px;
@@ -534,5 +522,6 @@ section {
   .info-container {
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: 3em;
   }
 }
