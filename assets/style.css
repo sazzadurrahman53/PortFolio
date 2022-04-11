@@ -250,7 +250,7 @@ section {
 .about-content .right .cv-btn a #resume-text {
   color: rgb(255, 72, 0) !important;
 }
-.about-content .right .cv-btn a {
+.about-content .right a {
   text-decoration: none;
 }
 .about-content .right .cv-btn img {
